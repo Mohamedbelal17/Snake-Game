@@ -222,11 +222,11 @@ class Food {
 
 class Obstacles {
   constructor() {
+        this.obstacle = [];
     this.placeObstacles();
   }
 
   placeObstacles() {
-    this.obstacle = [];
     for (let i = 0; i < 5; i++) {
       this.obstacle.push({
         x: Math.floor(Math.random() * (canvas.width / 10)),
